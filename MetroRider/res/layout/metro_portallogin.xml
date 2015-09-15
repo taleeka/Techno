@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/optimask" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Metro Rider"
+        android:textSize="35dp" />
+
+      <Button
+          android:id="@+id/btnDriverSignin"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView1"
+          android:layout_centerHorizontal="true"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          android:background="@drawable/layers_fb_button_bg"
+          android:paddingBottom="10dp"
+          android:paddingLeft="30dp"
+          android:paddingRight="10dp"
+          android:paddingTop="10dp"
+          android:text="  Log in as Driver"
+          android:textColor="#F2F2F2"
+          android:textSize="17dp"
+          android:textStyle="bold" />
+      
+       <Button
+          android:id="@+id/btnUserSignin"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/btnDriverSignin"
+          android:layout_centerHorizontal="true"
+          android:layout_margin="20dp"
+          android:background="@drawable/layers_fb_button_bg"
+          android:paddingBottom="10dp"
+          android:paddingLeft="30dp"
+          android:paddingRight="10dp"
+          android:paddingTop="10dp"
+          android:text="  Log in as User"
+          android:textColor="#F2F2F2"
+          android:textSize="17dp"
+          android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/textskip"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignRight="@+id/btnDriverSignin"
+           android:layout_marginTop="39dp"
+           android:text="Skip"
+           android:textSize="25dp" />
+
+</RelativeLayout>

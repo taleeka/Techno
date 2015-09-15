@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="top"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tblrow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/rounded_trow_bck" >
+
+            <EditText
+                android:id="@+id/edfrom"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/edittext_bck"
+                android:hint="From"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/txtspeech"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/microphone"
+                android:paddingTop="5dp" />
+        </TableRow>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/tblrow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/rounded_trow_bck" >
+
+            <EditText
+                android:id="@+id/edto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/edittext_bck"
+                android:hint="To"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="20dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/txtspeech2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/microphone"
+                android:paddingTop="5dp" />
+        </TableRow>
+    </FrameLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/view2" >
+
+         <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+  
+     <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_button"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
